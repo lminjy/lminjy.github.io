@@ -5,8 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="天文楼">
-    <meta name="description" content="Git​    每次我对代码修改后，我都得不厌其烦的将其拷贝后重新命名，我常常忘记每次修改了什么，也对这枯燥而不必要的工作厌烦，因此Git的简要学习势在必行。学习的是菜鸟教程的Git教程 。
-​    我使用的是windows版的Git B">
+    <meta name="description" content="Git每次我对代码修改后，我都得不厌其烦的将其拷贝后重新命名，我常常忘记每次修改了什么，也对这枯燥而不必要的工作厌烦，因此Git的简要学习势在必行。
+我学习的是菜鸟教程的Git教程 ，使用的是windows版的Git Bash。
+简要介绍由">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -464,42 +465,42 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>​    每次我对代码修改后，我都得不厌其烦的将其拷贝后重新命名，我常常忘记每次修改了什么，也对这枯燥而不必要的工作厌烦，因此Git的简要学习势在必行。学习的是菜鸟教程的<a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">Git教程</a> 。</p>
-<p>​    我使用的是windows版的Git Bash。</p>
-<h2 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h2><p>​    由于我未曾用过SVN、CVS等版本控制工具，在这里便不再拾人牙慧，简单的了解一下Git便于理清其工作原理。</p>
-<p>​    Git采用了分布式版本库的方式，即每个人将当前版本的代码拷贝到本地仓库从而各自进行修改，每个人都拥有全部的资源。Git控制的相关信息储存在.git的隐藏目录中。</p>
-<p>​    本地仓库的维护主要依赖三个区域：工作区、暂存区（Index）、HEAD。</p>
+                <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>每次我对代码修改后，我都得不厌其烦的将其拷贝后重新命名，我常常忘记每次修改了什么，也对这枯燥而不必要的工作厌烦，因此Git的简要学习势在必行。</p>
+<p>我学习的是菜鸟教程的<a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">Git教程</a> ，使用的是windows版的Git Bash。</p>
+<h2 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h2><p>由于我未曾用过SVN、CVS等版本控制工具，在这里便不再拾人牙慧，简单的了解一下Git便于理清其工作原理。</p>
+<p>Git采用了分布式版本库的方式，即每个人将当前版本的代码拷贝到本地仓库从而各自进行修改，每个人都拥有全部的资源。Git控制的相关信息储存在.git的隐藏目录中。</p>
+<p>本地仓库的维护主要依赖三个区域：工作区、暂存区（Index）、HEAD。</p>
 <ul>
 <li><p>工作区：本地仓库所在目录，即我们直接处理代码的地方</p>
 </li>
 <li><p>暂存区：本质是索引，临时保存我们的修改</p>
 </li>
-<li><p>HEAD ：指向当前分支，保存最后提交的结果</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2015/02/1352126739_7909.jpg"></p>
+<li><p>HEAD ：指向当前分支，保存最后提交的结果<img src="https://www.runoob.com/wp-content/uploads/2015/02/1352126739_7909.jpg"></p>
 <p>工作流程如下：</p>
 <p><img src="https://www.runoob.com/wp-content/uploads/2015/02/git-process.png"></p>
 </li>
 </ul>
-<h2 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h2><p>​    可以在本地创建一个Git仓库</p>
+<h2 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h2><p>可以在本地创建一个Git仓库</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init [dir]					#将当前目录初始化为Git仓库（生成.git目录）</span><br><span class="line">git add &lt;file&gt;					#跟踪指定文件，添加到暂存区</span><br><span class="line">git commit -m &quot;提交信息&quot;	  	  #保存修改</span><br></pre></td></tr></table></figure>
 
-<p>​    也可以克隆一个现有的Git仓库</p>
+<p>也可以克隆一个现有的Git仓库</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;git repository&gt; [new name]			</span><br><span class="line">##克隆Git仓库到当前目录</span><br><span class="line">##git repository 常为git@github.com:用户名/仓库名.git</span><br></pre></td></tr></table></figure>
 
-<p>​    查看修改</p>
+<p>查看修改</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">git status [-s]</span><br><span class="line">##查看的是工作区和暂存区的状态，不显示已commit到项目历史的信息</span><br><span class="line">##每次修改后都需要先add再commit</span><br><span class="line">##可以使用git add -u 将之前跟踪的文件添加到暂存区</span><br><span class="line"></span><br><span class="line">git diff [file]</span><br><span class="line">##显示暂存区和工作区差异</span><br><span class="line">git diff --cache [file]</span><br><span class="line">##显示暂存区和最后提交的差异</span><br><span class="line"></span><br><span class="line">git reset [--soft | --mixed | --hard] [HEAD~n [file]]</span><br><span class="line">##mixed:回退HEAD版本，并更新(回退)Index(默认)</span><br><span class="line">##soft :回退HEAD版本</span><br><span class="line">##hard :回退HEAD版本，并更新(回退)Index和工作区（**危险!**）</span><br><span class="line"></span><br><span class="line">git log [--reverse --oneline --decorate]</span><br><span class="line">##查看历史提交记录</span><br><span class="line">git blame &lt;file&gt;</span><br><span class="line">##查看指定文件历史提交记录</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://img-blog.csdn.net/20180819222755855"></p>
-<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>​    Git多与github联系在一起，一般将github作为远程仓库。</p>
-<p>​    本地仓库和github仓库的传输是SSH加密的，需要RSA算法配置密钥：</p>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>Git多与github联系在一起，一般将github作为远程仓库。</p>
+<p>本地仓库和github仓库的传输是SSH加密的，需要RSA算法配置密钥：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_github_email&quot;</span><br></pre></td></tr></table></figure>
 
-<p>​    默认生成在~&#x2F;.ssh，将其中的公钥id_ras.pub的内容上传到github账户Setting-&gt; SSH and GPG keys-&gt; New SSSH key中的Key中。</p>
-<p>​    验证连接是否成功可以输入:</p>
+<p>默认生成在~&#x2F;.ssh，将其中的公钥id_ras.pub的内容上传到github账户Setting-&gt; SSH and GPG keys-&gt; New SSSH key中的Key中。</p>
+<p>验证连接是否成功可以输入:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
-<p>​    </p>
-<p>​    关联远程仓库：</p>
+
+
+<p>关联远程仓库：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git remote add [shortname(多是origin)] [url]	#远程仓库需先存在</span><br><span class="line"></span><br><span class="line">git remote -v				#查看本地仓库配置的远程仓库</span><br><span class="line">git remote rm origin		 #删除已关联的远程仓库</span><br><span class="line"></span><br><span class="line">git fetch origin [branch]	#下载新分支与数据</span><br><span class="line">git merge origin/&lt;branch&gt;	#合并到当前分支，并会将更新同步到本地</span><br><span class="line">git checkout -b &lt;my_branch&gt; &lt;origin/master&gt;</span><br><span class="line">##在新的远程分支上工作，操作实质是创建新的分支指向origin/master并切换过去</span><br><span class="line"></span><br><span class="line">git push origin &lt;branch&gt; 	#将当前分支推送到远程仓库的指定分支</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly93czEuc2luYWltZy5jbi9sYXJnZS8wMDZWckpBSmd5MWc1azByZG5pNGRqMzBtazBmdmRnZS5qcGc"></p>
