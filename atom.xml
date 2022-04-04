@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>动物园</title>
+  
+  <subtitle>lminjyの博客</subtitle>
+  <link href="https://lminjy.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://lminjy.xyz/"/>
+  <updated>2022-04-03T18:01:26.964Z</updated>
+  <id>https://lminjy.xyz/</id>
+  
+  <author>
+    <name>星语</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://lminjy.xyz/2022/03/23/github-hexo-da-jian-bo-ke/"/>
+    <id>https://lminjy.xyz/2022/03/23/github-hexo-da-jian-bo-ke/</id>
+    <published>2022-03-23T11:20:41.254Z</published>
+    <updated>2022-04-03T18:01:26.964Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Github-Hexo搭建博客&quot;&gt;&lt;a href=&quot;#Github-Hexo搭建博客&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lminjy.xyz/2022/03/23/git-jian-yao-xue-xi/"/>
+    <id>https://lminjy.xyz/2022/03/23/git-jian-yao-xue-xi/</id>
+    <published>2022-03-23T10:46:14.159Z</published>
+    <updated>2022-04-03T18:02:47.831Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lminjy.xyz/2022/03/23/markdown-yu-fa-xue-xi/"/>
+    <id>https://lminjy.xyz/2022/03/23/markdown-yu-fa-xue-xi/</id>
+    <published>2022-03-23T10:46:14.140Z</published>
+    <updated>2022-03-23T12:57:39.081Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;p&gt;采用的是Typora编辑.md文件。学习的是菜鸟教程中的&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://lminjy.xyz/2022/03/11/hello-world/"/>
+    <id>https://lminjy.xyz/2022/03/11/hello-world/</id>
+    <published>2022-03-11T15:56:19.974Z</published>
+    <updated>2022-03-11T15:56:19.974Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
