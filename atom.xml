@@ -6,7 +6,7 @@
   <link href="https://lminjy.xyz/atom.xml" rel="self"/>
   
   <link href="https://lminjy.xyz/"/>
-  <updated>2022-04-04T12:05:30.697Z</updated>
+  <updated>2022-10-19T14:25:05.226Z</updated>
   <id>https://lminjy.xyz/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>matery主题修改</title>
-    <link href="https://lminjy.xyz/2022/04/04/matery-zhu-ti-xiu-gai/"/>
-    <id>https://lminjy.xyz/2022/04/04/matery-zhu-ti-xiu-gai/</id>
-    <published>2022-04-04T12:05:30.000Z</published>
-    <updated>2022-04-04T12:05:30.697Z</updated>
+    <title>高等数学方法体系--积分篇</title>
+    <link href="https://lminjy.xyz/2022/10/19/gao-deng-shu-xue-fang-fa-ti-xi-ji-fen-pian/"/>
+    <id>https://lminjy.xyz/2022/10/19/gao-deng-shu-xue-fang-fa-ti-xi-ji-fen-pian/</id>
+    <published>2022-10-19T14:25:05.000Z</published>
+    <updated>2022-10-19T14:25:05.226Z</updated>
     
     
     
@@ -30,29 +30,273 @@
   </entry>
   
   <entry>
-    <title>Github+Hexo搭建博客</title>
-    <link href="https://lminjy.xyz/2022/03/11/github-hexo-da-jian-bo-ke/"/>
-    <id>https://lminjy.xyz/2022/03/11/github-hexo-da-jian-bo-ke/</id>
-    <published>2022-03-11T10:22:35.000Z</published>
-    <updated>2022-04-04T11:23:18.882Z</updated>
+    <title>“âb样条插值</title>
+    <link href="https://lminjy.xyz/2022/08/15/ab-yang-tiao-cha-zhi/"/>
+    <id>https://lminjy.xyz/2022/08/15/ab-yang-tiao-cha-zhi/</id>
+    <published>2022-08-15T15:21:44.000Z</published>
+    <updated>2022-08-15T15:21:44.373Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>EKF编程总结</title>
+    <link href="https://lminjy.xyz/2022/08/15/ekf-bian-cheng-zong-jie/"/>
+    <id>https://lminjy.xyz/2022/08/15/ekf-bian-cheng-zong-jie/</id>
+    <published>2022-08-15T13:10:03.000Z</published>
+    <updated>2022-08-15T13:10:03.197Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Kalman filter</title>
+    <link href="https://lminjy.xyz/2022/08/12/kalman-filter/"/>
+    <id>https://lminjy.xyz/2022/08/12/kalman-filter/</id>
+    <published>2022-08-12T14:08:01.000Z</published>
+    <updated>2022-08-12T14:08:01.720Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>概率论理论体系--随机过程</title>
+    <link href="https://lminjy.xyz/2022/08/09/gai-lu-lun-li-lun-ti-xi-sui-ji-guo-cheng/"/>
+    <id>https://lminjy.xyz/2022/08/09/gai-lu-lun-li-lun-ti-xi-sui-ji-guo-cheng/</id>
+    <published>2022-08-09T07:01:11.000Z</published>
+    <updated>2022-08-09T07:01:11.402Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>概率论理论体系--数理统计</title>
+    <link href="https://lminjy.xyz/2022/08/07/gai-lu-lun-li-lun-ti-xi-shu-li-tong-ji/"/>
+    <id>https://lminjy.xyz/2022/08/07/gai-lu-lun-li-lun-ti-xi-shu-li-tong-ji/</id>
+    <published>2022-08-07T09:35:59.000Z</published>
+    <updated>2022-08-07T09:35:59.147Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The Missing Semester of Your CS Education</title>
+    <link href="https://lminjy.xyz/2022/07/02/the-missing-semester-of-your-cs-education/"/>
+    <id>https://lminjy.xyz/2022/07/02/the-missing-semester-of-your-cs-education/</id>
+    <published>2022-07-02T10:49:55.000Z</published>
+    <updated>2022-07-02T10:49:55.083Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy学习</title>
+    <link href="https://lminjy.xyz/2022/06/28/scrapy-xue-xi/"/>
+    <id>https://lminjy.xyz/2022/06/28/scrapy-xue-xi/</id>
+    <published>2022-06-28T02:33:52.000Z</published>
+    <updated>2022-06-28T04:37:53.659Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Github-Hexo搭建博客&quot;&gt;&lt;a href=&quot;#Github-Hexo搭建博客&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;Scrapy&quot;&gt;&lt;a href=&quot;#Scrapy&quot; class=&quot;headerlink&quot; title=&quot;Scrapy&quot;&gt;&lt;/a&gt;Scrapy&lt;/h1&gt;&lt;p&gt;摘录 cnkai 的 &lt;a</summary>
         
       
     
     
     
-    <category term="技术分享" scheme="https://lminjy.xyz/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>internship</title>
+    <link href="https://lminjy.xyz/2022/06/27/internship/"/>
+    <id>https://lminjy.xyz/2022/06/27/internship/</id>
+    <published>2022-06-27T07:08:13.000Z</published>
+    <updated>2022-06-27T07:08:13.974Z</updated>
     
     
-    <category term="Blog" scheme="https://lminjy.xyz/tags/Blog/"/>
     
-    <category term="Hexo" scheme="https://lminjy.xyz/tags/Hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>英语学习</title>
+    <link href="https://lminjy.xyz/2022/06/24/ying-yu-xue-xi/"/>
+    <id>https://lminjy.xyz/2022/06/24/ying-yu-xue-xi/</id>
+    <published>2022-06-24T13:38:35.000Z</published>
+    <updated>2022-06-24T14:04:02.208Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;英语学习&quot;&gt;&lt;a href=&quot;#英语学习&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>WebPage</title>
+    <link href="https://lminjy.xyz/2022/06/23/webpage/"/>
+    <id>https://lminjy.xyz/2022/06/23/webpage/</id>
+    <published>2022-06-23T14:52:47.000Z</published>
+    <updated>2022-06-23T14:52:47.683Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络2</title>
+    <link href="https://lminjy.xyz/2022/06/12/ji-suan-ji-wang-luo-2/"/>
+    <id>https://lminjy.xyz/2022/06/12/ji-suan-ji-wang-luo-2/</id>
+    <published>2022-06-12T10:56:07.000Z</published>
+    <updated>2022-06-12T10:56:07.999Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络</title>
+    <link href="https://lminjy.xyz/2022/06/12/ji-suan-ji-wang-luo/"/>
+    <id>https://lminjy.xyz/2022/06/12/ji-suan-ji-wang-luo/</id>
+    <published>2022-06-12T10:43:44.000Z</published>
+    <updated>2022-06-12T10:43:44.981Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习之numpy</title>
+    <link href="https://lminjy.xyz/2022/06/01/python-xue-xi-zhi-random/"/>
+    <id>https://lminjy.xyz/2022/06/01/python-xue-xi-zhi-random/</id>
+    <published>2022-06-01T14:54:58.000Z</published>
+    <updated>2022-06-01T17:13:46.251Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;numpy&quot;&gt;&lt;a href=&quot;#numpy&quot; class=&quot;headerlink&quot; title=&quot;numpy&quot;&gt;&lt;/a&gt;numpy&lt;/h1&gt;&lt;h2 id=&quot;array&quot;&gt;&lt;a href=&quot;#array&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VS code 入门</title>
+    <link href="https://lminjy.xyz/2022/05/27/vs-code-ru-men/"/>
+    <id>https://lminjy.xyz/2022/05/27/vs-code-ru-men/</id>
+    <published>2022-05-27T03:01:31.000Z</published>
+    <updated>2022-05-27T03:01:31.407Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>DEAP学习</title>
+    <link href="https://lminjy.xyz/2022/05/23/deap-xue-xi/"/>
+    <id>https://lminjy.xyz/2022/05/23/deap-xue-xi/</id>
+    <published>2022-05-23T08:02:35.000Z</published>
+    <updated>2022-05-23T08:02:35.173Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电子线路设计-直升机控制</title>
+    <link href="https://lminjy.xyz/2022/05/19/dian-zi-xian-lu-she-ji-zhi-sheng-ji-kong-zhi/"/>
+    <id>https://lminjy.xyz/2022/05/19/dian-zi-xian-lu-she-ji-zhi-sheng-ji-kong-zhi/</id>
+    <published>2022-05-19T08:59:10.000Z</published>
+    <updated>2022-05-19T08:59:10.686Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>粒子群算法实现与改进</title>
+    <link href="https://lminjy.xyz/2022/05/18/li-zi-qun-suan-fa-shi-xian-yu-gai-jin/"/>
+    <id>https://lminjy.xyz/2022/05/18/li-zi-qun-suan-fa-shi-xian-yu-gai-jin/</id>
+    <published>2022-05-17T16:18:06.000Z</published>
+    <updated>2022-05-17T16:18:06.485Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>”四旋翼制作-源码架构“</title>
+    <link href="https://lminjy.xyz/2022/05/11/si-xuan-yi-zhi-zuo-yuan-ma-jia-gou/"/>
+    <id>https://lminjy.xyz/2022/05/11/si-xuan-yi-zhi-zuo-yuan-ma-jia-gou/</id>
+    <published>2022-05-11T08:15:38.000Z</published>
+    <updated>2022-05-11T08:15:38.926Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>”四旋翼制作经验“</title>
+    <link href="https://lminjy.xyz/2022/05/11/si-xuan-yi-zhi-zuo-jing-yan/"/>
+    <id>https://lminjy.xyz/2022/05/11/si-xuan-yi-zhi-zuo-jing-yan/</id>
+    <published>2022-05-11T07:19:47.000Z</published>
+    <updated>2022-05-11T07:19:47.415Z</updated>
+    
+    
+    
+    
     
   </entry>
   
