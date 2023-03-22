@@ -525,7 +525,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    956
+                    931
                 </div>
                 
 
@@ -549,34 +549,36 @@
             <div id="articleContent">
                 <h1 id="Github-Hexo搭建个人博客"><a href="#Github-Hexo搭建个人博客" class="headerlink" title="Github+Hexo搭建个人博客"></a>Github+Hexo搭建个人博客</h1><p>采用的是知乎上枫叶的<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建个人博客（超详细）</a> 。</p>
 <p>Github注册，Git安装不再赘述，Git的使用可以看</p>
-<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><p>node.js的安装教程没有太多问题，值得关注的是其包管理器npm，如果不想把模块都安装到C盘，需要设置npm在安装全局模块时的路径和环境变量。</p>
+<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><p>node.js的安装教程没有太多问题，值得关注的是其包管理器npm，如果不想把模块都安装到C盘，</p>
+<p>需要设置npm安装全局模块的路径和环境变量。</p>
 <p>在node.js安装的文件夹（以在D盘下为例）中创建新的文件夹node_cache、node_global。</p>
 <p><strong>注意需要右键设置“属性“，在”安全“中编辑用户具有完全控制的权限。</strong> </p>
 <p>在cmd中输入：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix <span class="token string">"D:\nodejs\node_global"</span>
 <span class="token function">npm</span> config <span class="token keyword">set</span> cache <span class="token string">"D:\nodejs\node_cache"</span>
 </code></pre>
-<p>设置环境变量（此电脑–&gt;右键属性–&gt;高级系统设置 –&gt; 环境变量）：</p>
+<p>设置环境变量（此电脑=&gt;右键属性=&gt;高级系统设置 =&gt; 环境变量）：</p>
 <ul>
 <li>在系统变量中创建新变量“NODE_PATH”，值为“D:\nodejs\node_global\node_modules”</li>
 <li>在用户变量的Path中编辑npm的路径为“D:\nodejs\node_global”</li>
 </ul>
-<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>先在Github上创建<strong>”注册用户名.github.io“</strong> 的仓库，在Settings–&gt;Pages可以查看博客的一些配置，如域名。</p>
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>先在Github上创建<strong>”用户名.github.io“</strong> 的仓库，在Settings=&gt;Pages可以查看博客的一些配置，如域名。</p>
 <p>新建文件夹Blog，右键打开Git Bush here（cmd还需要配置cnpm的环境变量），输入命令：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org
-<span class="token comment" spellcheck="true">##更换npm的安装源</span>
+<span class="token comment" spellcheck="true"># 更换npm的安装源</span>
 cnpm <span class="token function">install</span> -g hexo-cli            
 
 hexo init
 hexo s<span class="token punctuation">(</span>start<span class="token punctuation">)</span>
 
-<span class="token comment" spellcheck="true">##博客上传路径在Blog\source\_posts</span>
+<span class="token comment" spellcheck="true"># 博客上传路径在Blog\source\_posts</span>
 hexo clean
 hexo g<span class="token punctuation">(</span>generate<span class="token punctuation">)</span>
 </code></pre>
-<p>但是目前仅能本机访问，还需部署到远端，我选择的是先部署到github上。</p>
+<p>但是目前仅能本机访问，还需部署到远程服务器</p>
+<p>先部署到github上</p>
 <p>打开Blog下的_config.yml 文件，在文件底部输入：</p>
-<pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">##注意空格</span>
+<pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 注意冒号后空格(.yml文件)</span>
 <span class="token key atrule">deploy</span><span class="token punctuation">:</span>
   <span class="token key atrule">type</span><span class="token punctuation">:</span> git
   <span class="token key atrule">repository</span><span class="token punctuation">:</span> git@github.com<span class="token punctuation">:</span>lminjy/lminjy.github.io.git  <span class="token comment" spellcheck="true">#你的仓库地址</span>
@@ -588,16 +590,16 @@ hexo g<span class="token punctuation">(</span>generate<span class="token punctua
 hexo d                <span class="token comment" spellcheck="true">#将博客部署到指定仓库</span>
 </code></pre>
 <p>部署完成后输入你的仓库名（如lminjy.github.io）就可以访问博客。</p>
-<h2 id="个性化定制"><a href="#个性化定制" class="headerlink" title="个性化定制"></a>个性化定制</h2><p>首先是定制域名，我选择的是腾讯云的域名lminjy.xyz。</p>
-<p>购买域名后需要解析域名：将域名指向网站空间ip，即手动把域名地址和IP地址的对应关系写到DNS服务器上。</p>
-<p>具体操作是打开控制台$\to$我的域名$\to$“解析”$\to$添加记录，填写对应关系：</p>
+<h2 id="个性化定制"><a href="#个性化定制" class="headerlink" title="个性化定制"></a>个性化定制</h2><h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>首先是定制域名，我选择的是腾讯云的域名lminjy.xyz。</p>
+<p>购买域名后需要解析域名：将域名指向网站空间ip，即手动把域名地址和ip地址的对应关系写到DNS服务器上。</p>
+<p>具体操作是打开控制台=&gt;我的域名=&gt;“解析”=&gt;添加记录，填写对应关系：</p>
 <ul>
 <li>主机记录主要填写www或@（不需要在域名前加www）</li>
 <li>记录类型可选A（需要ip地址）或CNAME（可将域名指向另一个域名，由另一个域名提供ip地址）</li>
 <li>域名的ip地址查询可以通过ping，如ping lminjy.github.io</li>
 </ul>
 <p>记得在source文件夹下，新建CNAME.txt，其内容为你的域名，然后删掉后缀</p>
-<p>随后便是设置主题了，next功能集成多，但是有点简洁，满足不了我闷骚的内心，我选的是matery主题：</p>
+<h3 id="设置主题"><a href="#设置主题" class="headerlink" title="设置主题"></a>设置主题</h3><p>我选的是matery主题：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone git@github.com:blinkfox/hexo-theme-matery themes/matery
 </code></pre>
 <p>继续修改Blog下的_config.yml 文件（站点配置文件）：</p>
@@ -649,7 +651,7 @@ hexo d                <span class="token comment" spellcheck="true">#将博客�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lminjy.xyz/2022/03/11/github-hexo-da-jian-bo-ke/">https://lminjy.xyz/2022/03/11/github-hexo-da-jian-bo-ke/</a>
+                    <a href="http://example.com/2022/03/11/github-hexo-da-jian-bo-ke/">http://example.com/2022/03/11/github-hexo-da-jian-bo-ke/</a>
                 </span>
             </div>
             <div class="reprint__notice">
