@@ -30,9 +30,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.1.0">
+<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="动物园" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="动物园" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -142,58 +142,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
-      
-      <span>资源</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Musics</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/movies">
-          
-          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Movies</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/books">
-          
-          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Books</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/galleries">
-          
-          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Galleries</span>
-        </a>
-      </li>
-      
-    </ul>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -295,61 +243,6 @@
           
         </li>
         
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-list"></i>
-			
-			资源
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
-              
-                <li>
-
-                  <a href="/musics " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Musics</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/movies " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Movies</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/books " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Books</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/galleries " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Galleries</span>
-                  </a>
-                </li>
-              
-            </ul>
-          
-        </li>
-        
         
     </ul>
 </div>
@@ -363,6 +256,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -525,14 +431,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -549,8 +455,8 @@
             <div id="articleContent">
                 <h1 id="Github-Hexo搭建个人博客"><a href="#Github-Hexo搭建个人博客" class="headerlink" title="Github+Hexo搭建个人博客"></a>Github+Hexo搭建个人博客</h1><p>采用的是知乎上枫叶的<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建个人博客（超详细）</a> 。</p>
 <p>Github注册，Git安装不再赘述，Git的使用可以看</p>
-<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><p>node.js的安装教程没有太多问题，值得关注的是其包管理器npm，如果不想把模块都安装到C盘，</p>
-<p>需要设置npm安装全局模块的路径和环境变量。</p>
+<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><p>node.js的安装教程没有太多问题，值得关注的是其包管理器npm</p>
+<p>如果不想把模块都安装到C盘，需要设置npm安装全局模块的路径和环境变量。</p>
 <p>在node.js安装的文件夹（以在D盘下为例）中创建新的文件夹node_cache、node_global。</p>
 <p><strong>注意需要右键设置“属性“，在”安全“中编辑用户具有完全控制的权限。</strong> </p>
 <p>在cmd中输入：</p>
@@ -562,7 +468,7 @@
 <li>在系统变量中创建新变量“NODE_PATH”，值为“D:\nodejs\node_global\node_modules”</li>
 <li>在用户变量的Path中编辑npm的路径为“D:\nodejs\node_global”</li>
 </ul>
-<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>先在Github上创建<strong>”用户名.github.io“</strong> 的仓库，在Settings=&gt;Pages可以查看博客的一些配置，如域名。</p>
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>先在Github上创建 <strong>”用户名.github.io“</strong> 的仓库，在Settings=&gt;Pages可以查看博客的一些配置，如域名。</p>
 <p>新建文件夹Blog，右键打开Git Bush here（cmd还需要配置cnpm的环境变量），输入命令：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org
 <span class="token comment" spellcheck="true"># 更换npm的安装源</span>
@@ -591,15 +497,15 @@ hexo d                <span class="token comment" spellcheck="true">#将博客�
 </code></pre>
 <p>部署完成后输入你的仓库名（如lminjy.github.io）就可以访问博客。</p>
 <h3 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h3><p>Blog文件夹的目录如下：</p>
-<pre><code>.
+<pre class=" language-bash"><code class="language-bash"><span class="token keyword">.</span>
 ├── _config.yml
 ├── package.json
 ├── node_modules
 ├── public
 ├── scaffolds
-├── source
-|   ├── _drafts
-|   └── _posts
+├── <span class="token function">source</span>
+<span class="token operator">|</span>   ├── _drafts
+<span class="token operator">|</span>   └── _posts
 └── themes
 </code></pre>
 <ul>
@@ -658,6 +564,21 @@ hexo d                <span class="token comment" spellcheck="true">#将博客�
 </code></pre>
 <p>稍等片刻，就可以输入自己的域名查看博客。</p>
 <p>后续如果要上传博客，可以将自己写的.md文件复制到Blog\source_posts目录下，并重现部署</p>
+<h2 id="图片上传"><a href="#图片上传" class="headerlink" title="图片上传"></a>图片上传</h2><p>本地编辑文章可能需要插入本地图片，但上传后就会遇到问题：</p>
+<p><strong>本地的链接在文章发布之后必然失效，该怎么办？</strong></p>
+<p>解决方法：</p>
+<ul>
+<li><p>将图片上传到图床</p>
+</li>
+<li><p>在本地source中建立img文件夹，将引用到的图片全部放在此文件夹中</p>
+<p>路径为 <code>/img/图片名.jpg</code></p>
+</li>
+<li><p>在配置文件 <strong>_config.yml</strong> 里修改：<code>post_asset_folder: true</code></p>
+<p>安转插件 <code>npm install hexo-asset-image --save</code></p>
+<p>运行<code>hexo n "标题"</code> 时，<code>/source/_post</code> 文件夹中除了<code>标题.md</code>外，还有一个同名文件夹</p>
+<p>将图片保存在文件夹，<code>.md</code> 文件用 <code>![替代文字](标题/图片名.jpg)</code></p>
+</li>
+</ul>
 <h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>主体框架已经搭建完毕，接下来是对matery主题的修改，进行更多的个性化定制。</p>
 
                 
@@ -739,7 +660,7 @@ hexo d                <span class="token comment" spellcheck="true">#将博客�
 <div id="article-share">
 
     
-    <div class="social-share" data-sites="qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <div class="social-share" data-sites="facebook, google, qq, wechat" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
     <script src="/libs/share/js/social-share.min.js"></script>
     
 
@@ -1176,7 +1097,7 @@ hexo d                <span class="token comment" spellcheck="true">#将博客�
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git简要使用">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="git简要使用">
                         
                         <span class="card-title">git简要使用</span>
                     </div>
@@ -1380,13 +1301,6 @@ hexo d                <span class="token comment" spellcheck="true">#将博客�
 </main>
 
 
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    });
-</script>
-
 
 
     <footer class="page-footer bg-color">
@@ -1459,7 +1373,7 @@ hexo d                <span class="token comment" spellcheck="true">#将博客�
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">2.3k</span>
+                        class="white-color">5k</span>
             
             
             
