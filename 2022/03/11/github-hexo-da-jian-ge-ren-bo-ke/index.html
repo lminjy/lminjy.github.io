@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="”四旋翼制作-源码架构“, C,Python,机器视觉,深度学习,嵌入式等">
-    <meta name="description" content="">
+    <meta name="keywords" content="Github+Hexo搭建博客, Python,机器学习,嵌入式，算法等">
+    <meta name="description" content="利用Github Pages和Hexo搭建一个属于自己的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>”四旋翼制作-源码架构“ | 动物园</title>
+    <title>Github+Hexo搭建博客 | 动物园</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -211,7 +211,7 @@
         <div class="logo-name">动物园</div>
         <div class="logo-desc">
             
-            这是个人总结学习经验，记录生活点滴的博客。希望在以后的生命旅途中，独自精彩。
+            这是个人总结学习经验，记录生活点滴的博客。
             
         </div>
     </div>
@@ -366,12 +366,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">”四旋翼制作-源码架构“</h1>
+                    <h1 class="description center-align post-title">Github+Hexo搭建博客</h1>
                 </div>
             </div>
         </div>
@@ -485,12 +485,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Blog/">
+                                <span class="chip bg-color">Blog</span>
+                            </a>
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" class="post-category">
+                                工具使用
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -499,7 +516,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-11
+                    2022-03-11
                 </div>
                 
 
@@ -508,14 +525,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -530,7 +547,119 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="Github-Hexo搭建个人博客"><a href="#Github-Hexo搭建个人博客" class="headerlink" title="Github+Hexo搭建个人博客"></a>Github+Hexo搭建个人博客</h1><p>采用的是知乎上枫叶的<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建个人博客（超详细）</a> 。</p>
+<p>Github注册，Git安装不再赘述，Git的使用可以看</p>
+<h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><p>node.js的安装教程没有太多问题，值得关注的是其包管理器npm，如果不想把模块都安装到C盘，</p>
+<p>需要设置npm安装全局模块的路径和环境变量。</p>
+<p>在node.js安装的文件夹（以在D盘下为例）中创建新的文件夹node_cache、node_global。</p>
+<p><strong>注意需要右键设置“属性“，在”安全“中编辑用户具有完全控制的权限。</strong> </p>
+<p>在cmd中输入：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix <span class="token string">"D:\nodejs\node_global"</span>
+<span class="token function">npm</span> config <span class="token keyword">set</span> cache <span class="token string">"D:\nodejs\node_cache"</span>
+</code></pre>
+<p>设置环境变量（此电脑=&gt;右键属性=&gt;高级系统设置 =&gt; 环境变量）：</p>
+<ul>
+<li>在系统变量中创建新变量“NODE_PATH”，值为“D:\nodejs\node_global\node_modules”</li>
+<li>在用户变量的Path中编辑npm的路径为“D:\nodejs\node_global”</li>
+</ul>
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>先在Github上创建<strong>”用户名.github.io“</strong> 的仓库，在Settings=&gt;Pages可以查看博客的一些配置，如域名。</p>
+<p>新建文件夹Blog，右键打开Git Bush here（cmd还需要配置cnpm的环境变量），输入命令：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org
+<span class="token comment" spellcheck="true"># 更换npm的安装源</span>
+cnpm <span class="token function">install</span> -g hexo-cli            
+
+hexo init
+hexo s<span class="token punctuation">(</span>start<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 博客上传路径在Blog\source\_posts</span>
+hexo clean
+hexo g<span class="token punctuation">(</span>generate<span class="token punctuation">)</span>
+</code></pre>
+<p>但是目前仅能本机访问，还需部署到远程服务器</p>
+<p>先部署到github上</p>
+<p>打开Blog下的_config.yml 文件，在文件底部输入：</p>
+<pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 注意冒号后空格(.yml文件)</span>
+<span class="token key atrule">deploy</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> git
+  <span class="token key atrule">repository</span><span class="token punctuation">:</span> git@github.com<span class="token punctuation">:</span>lminjy/lminjy.github.io.git  <span class="token comment" spellcheck="true">#你的仓库地址</span>
+  <span class="token key atrule">branch</span><span class="token punctuation">:</span> main
+</code></pre>
+<p>打开Git Bash，安装Git部署插件：</p>
+<pre class=" language-bash"><code class="language-bash">cnpm <span class="token function">install</span> --save hexo-deployer-git
+
+hexo d                <span class="token comment" spellcheck="true">#将博客部署到指定仓库</span>
+</code></pre>
+<p>部署完成后输入你的仓库名（如lminjy.github.io）就可以访问博客。</p>
+<h3 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h3><p>Blog文件夹的目录如下：</p>
+<pre><code>.
+├── _config.yml
+├── package.json
+├── node_modules
+├── public
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+</code></pre>
+<ul>
+<li><p><code>_config.yml</code> 是站点配置文件</p>
+</li>
+<li><p><code>package.json</code> 是应用程序信息，通常不需要关心</p>
+</li>
+<li><p><code>node_modules</code> 用来存放 <code>node</code> 相关的模块，通常不需要关心</p>
+</li>
+<li><p><code>scaffolds</code> 是模版文件夹，即每次新建文章时，都会根据模版文件来创建对应的 <code>.md</code> 文件</p>
+</li>
+<li><p><code>source</code> 是资源文件夹，用来存放用户资源的地方</p>
+<p>除 <code>_posts</code> 文件夹之外，开头命名为 _的文件 / 文件夹和隐藏的文件将会被忽略</p>
+</li>
+<li><p><code>theme</code> 是主题文件夹，每个主题的配置需实具体情况而定</p>
+</li>
+<li><p><code>pulic</code> 是存储hexo生成页面的文件夹，其内容将会部署到github上</p>
+</li>
+</ul>
+<h2 id="个性化定制"><a href="#个性化定制" class="headerlink" title="个性化定制"></a>个性化定制</h2><h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>首先是定制域名，我选择的是腾讯云的域名lminjy.xyz。</p>
+<p>购买域名后需要解析域名：将域名指向网站空间ip，即手动把域名地址和ip地址的对应关系写到DNS服务器上。</p>
+<p>具体操作是打开控制台=&gt;我的域名=&gt;“解析”=&gt;添加记录，填写对应关系：</p>
+<ul>
+<li>主机记录主要填写www或@（不需要在域名前加www）</li>
+<li>记录类型可选A（需要ip地址）或CNAME（可将域名指向另一个域名，由另一个域名提供ip地址）</li>
+<li>域名的ip地址查询可以通过ping，如ping lminjy.github.io</li>
+</ul>
+<p>在source文件夹下，新建CNAME.txt，其内容为你的域名，记得删掉后缀</p>
+<p><strong>域名过期</strong> 后如果不想绑定，只需</p>
+<ul>
+<li>清空CNAME文件，并提交</li>
+<li>可能还需要清除浏览器缓存</li>
+</ul>
+<h3 id="设置主题"><a href="#设置主题" class="headerlink" title="设置主题"></a>设置主题</h3><p>我选的是matery主题：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone git@github.com:blinkfox/hexo-theme-matery themes/matery
+</code></pre>
+<p>继续修改Blog下的_config.yml 文件（站点配置文件）：</p>
+<pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Site</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> 动物园 <span class="token comment" spellcheck="true">#标题</span>
+<span class="token key atrule">subtitle</span><span class="token punctuation">:</span> <span class="token string">'lminjyの博客'</span>
+<span class="token key atrule">description</span><span class="token punctuation">:</span> 这是个人总结学习经验，记录生活点滴的博客。
+<span class="token key atrule">keywords</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>Python<span class="token punctuation">,</span> 机器学习<span class="token punctuation">,</span> 嵌入式等<span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true">##description,keywords是想让搜索引擎收录，便于SEO优化</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> 星语     <span class="token comment" spellcheck="true">#作者</span>
+<span class="token key atrule">language</span><span class="token punctuation">:</span> zh<span class="token punctuation">-</span>CN     <span class="token comment" spellcheck="true">#主题语言</span>
+<span class="token key atrule">timezone</span><span class="token punctuation">:</span> Asia/Shanghai    <span class="token comment" spellcheck="true">#中国的时区</span>
+
+<span class="token comment" spellcheck="true"># Extensions</span>
+<span class="token comment" spellcheck="true">## Plugins: https://hexo.io/plugins/</span>
+<span class="token comment" spellcheck="true">## Themes: https://hexo.io/themes/</span>
+<span class="token key atrule">theme</span><span class="token punctuation">:</span> matery   <span class="token comment" spellcheck="true">#主题改为matery</span>
+</code></pre>
+<p>主题语言看themes/next/language中的中文是 zh-CN 还是 zh-Hans。</p>
+<p>在Blog下打开Git Bash，输入：</p>
+<pre class=" language-bash"><code class="language-bash">hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d
+</code></pre>
+<p>稍等片刻，就可以输入自己的域名查看博客。</p>
+<p>后续如果要上传博客，可以将自己写的.md文件复制到Blog\source_posts目录下，并重现部署</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>主体框架已经搭建完毕，接下来是对matery主题的修改，进行更多的个性化定制。</p>
+
                 
             </div>
             <hr/>
@@ -556,7 +685,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/05/11/si-xuan-yi-zhi-zuo-yuan-ma-jia-gou/">http://example.com/2022/05/11/si-xuan-yi-zhi-zuo-yuan-ma-jia-gou/</a>
+                    <a href="https://lminjy.github.io/2022/03/11/github-hexo-da-jian-ge-ren-bo-ke/">https://lminjy.github.io/2022/03/11/github-hexo-da-jian-ge-ren-bo-ke/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -593,7 +722,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Blog/">
+                                    <span class="chip bg-color">Blog</span>
+                                </a>
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1035,32 +1172,44 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/05/18/li-zi-qun-suan-fa-shi-xian-yu-gai-jin/">
+                <a href="/2022/03/22/git-jian-yao-shi-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="粒子群算法实现与改进">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git简要使用">
                         
-                        <span class="card-title">粒子群算法实现与改进</span>
+                        <span class="card-title">git简要使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            git作为一款十分流行的版本控制工具，有助于提高我们的开发效率
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-22
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            星语
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" class="post-category">
+                                    工具使用
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1069,35 +1218,52 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/11/si-xuan-yi-zhi-zuo-jing-yan/">
+                <a href="/2022/03/11/github-hexo-da-jian-ge-ren-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="”四旋翼制作经验“">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Github+Hexo搭建博客">
                         
-                        <span class="card-title">”四旋翼制作经验“</span>
+                        <span class="card-title">Github+Hexo搭建博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            利用Github Pages和Hexo搭建一个属于自己的博客
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            星语
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" class="post-category">
+                                    工具使用
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Blog/">
+                        <span class="chip bg-color">Blog</span>
+                    </a>
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1214,6 +1380,13 @@
 </main>
 
 
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
 
 
     <footer class="page-footer bg-color">
@@ -1286,7 +1459,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">12.8k</span>
+                        class="white-color">2.3k</span>
             
             
             
